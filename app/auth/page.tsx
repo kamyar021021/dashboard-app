@@ -8,8 +8,8 @@ import { useRouter } from "next/navigation";
 import { useAuth } from "@/context/AuthContext";
 import { FiSun, FiMoon } from "react-icons/fi";
 import styles from "./page.module.scss";
+import '../globals.css';
 
-// اسکیمای اعتبارسنجی
 const schema = z.object({
   phone: z
     .string()

@@ -158,7 +158,7 @@ export default function AuthForm() {
         onClick={toggleDarkMode}
         aria-label={darkMode ? "تغییر به تم روشن" : "تغییر به تم تاریک"}
       >
-        {darkMode ? <FiSun /> : <FiMoon />}
+        {darkMode ? <FiSun /> : <FiMoon style={{color: 'black'}} />}
       </button>
 
       <div className={styles.authCard}>

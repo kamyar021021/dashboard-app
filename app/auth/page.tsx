@@ -13,17 +13,17 @@ import '../globals.css';
 const schema = z.object({
   phone: z
     .string()
-    .min(1, "شماره موبایل الزامی است")
-    .regex(/^09\d{9}$/, "شماره موبایل معتبر نیست (مثال: 09123456789)"),
+    .min(1, "phone number is required")
+    .regex(/^09\d{9}$/, "phone number has to be like this: (09101921283)"),
   username: z
     .string()
-    .min(1, "نام کاربری الزامی است")
-    .min(3, "نام کاربری باید حداقل 3 کاراکتر باشد"),
+    .min(1, "username is required")
+    .min(3, "username has to be 3 character"),
   password: z
     .string()
-    .min(1, "رمز عبور الزامی است")
-    .min(4, "رمز عبور باید حداقل 4 کاراکتر باشد")
-    .max(20, "رمز عبور نمی‌تواند بیشتر از 20 کاراکتر باشد"),
+    .min(1, "password is required")
+    .min(4, "password has to be 4 character")
+    .max(20, "password has to be 20 character"),
 });
 
 type FormData = z.infer<typeof schema>;

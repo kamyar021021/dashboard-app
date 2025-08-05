@@ -1,4 +1,3 @@
-import "./globals.scss";
 import { AuthProvider } from "@/context/AuthContext";
 
 import { Inter, Roboto } from 'next/font/google'
